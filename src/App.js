@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import Header from './components/Header/Header';
+import MainPage from './Pages/Main/MainPage';
+import EventsPage from './Pages/EventsPage/EventsPage';
+import AboutPage from './Pages/AboutUsPage/AboutUsPage';
+import LocationsPage from './Pages/LocationsPage/LocationsPage';
+import RoutesPage from './Pages/RoutesPage/RoutesPage';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
+import Modal from './components/Modal/Modal';
+import Footer from './components/Footer/Footer';
+import './App.scss';
+import { useState } from 'react';
 
 function App() {
+
+  const [modalActive, setModalActive] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/events' element={<EventsPage />} />
+        <Route path='/locations' element={<LocationsPage />} />
+        <Route path='/routes' element={<RoutesPage />} />
+        <Route path='/aboutUs' element={<AboutPage />} />        
+        <Route path='*' element={<NotFoundPage />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

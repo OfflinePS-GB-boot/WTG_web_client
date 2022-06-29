@@ -1,0 +1,78 @@
+@import '../Styles/color.scss';
+@import '../Styles/buttons.scss';
+
+.header {
+    min-width: 1240px;
+}
+
+.header_logo {
+    color: $dark-shade;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+    width: 1200px;
+    padding: 0 20px;
+}
+
+.header_navList {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navList_item {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header_search {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $dark-shade25;
+}
+
+.login_button {
+    padding: 10px 20px;
+}
+
+// for modal
+
+.login_button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.login_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login_input {
+    padding: 10px 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.login_registration {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}

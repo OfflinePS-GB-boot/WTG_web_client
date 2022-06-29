@@ -1,0 +1,12 @@
+@import './components/Styles/text.scss';
+
+.App {
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  @include bodyText;
+}
+
+html {
+  box-sizing: border-box;
+}
