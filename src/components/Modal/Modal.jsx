@@ -1,3 +1,8 @@
+/* 
+  Это компонент модальных окон. 
+  пример применения в Header
+*/
+
 import React from 'react';
 import '../../components/Modal/Modal.scss';
 

@@ -1,3 +1,5 @@
+
+// миксин для ссылок в футере и хидере (может ещё куда потом пойдут)
 @mixin nav_links {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -8,6 +10,7 @@
     text-align: left;
 }
 
+// это миксин для обычных текстов
 @mixin bodyText {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -15,5 +18,26 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+}
 
+// Миксин для заголовков - черновая версия
+@mixin header {
+    font-family: 'Oswald', sans-serif;
+    font-style: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+// тут будет миксин для подзаголовков - черновая версия
+@mixin subHeader {
+    font-family: 'Oswald', sans-serif;
+    font-style: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
 }

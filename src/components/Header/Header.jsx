@@ -38,6 +38,7 @@ export default function Header() {
           Login
         </button>
         <Modal active={modalActive} setActive={setModalActive} >
+          
           <h2>Войти</h2>
           <form className='login_form' action="">
             <div className="login_inputs">
@@ -49,9 +50,6 @@ export default function Header() {
               <p>нет аккаунта на TudaGo? </p>
               <button className='button login_button'>Создать</button>
             </div>
-
-
-
           </form>
 
         </Modal>
