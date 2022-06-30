@@ -21,7 +21,7 @@ export default function Header() {
             <li ><Link className='navList_item' to="/events">События</Link></li>
             <li ><Link className='navList_item' to="/routes">Маршруты</Link></li>
             <li ><Link className='navList_item' to="/locations">Локации</Link></li>
-            <li ><Link className='navList_item' to="/aboutUs">О нас</Link></li>
+            <li ><Link role='aboutUs_btn' className='navList_item' to="/aboutUs">О нас</Link></li>
           </ul>
         </nav>
         <div className="header_search">
