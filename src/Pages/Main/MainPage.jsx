@@ -1,10 +1,30 @@
-import React from 'react'
-import '../Main/MainPage.scss'
-import image from '../../img/cardImg.jpg'
-import star from '../../img/star.svg'
-import location_icon from '../../img/location_icon.png'
+import React, { useEffect, useState } from 'react';
+import '../Main/MainPage.scss';
+import location_icon from '../../img/location_icon.png';
+import Card from '../../components/Card/Card';
 
 export default function MainPage() {
+
+  const DB = "./testDB.json"; //!TODO: перенести в отдельный файл (типа .env) <- сюда эндпоинт откуда загружать рекомендуемые локации. 
+
+  // хук useEffect, чтобы загрузить данные из базы данных при загрузке страницы
+  useEffect(() => {
+    
+    fetch(DB)                 //!TODO добавить асинхронность
+      .then(response => response.json())
+      .then(data => {
+        // console.log(data);
+      })
+      .catch(err => console.log( 'ошибка при fetch ' + err))
+  },[]);
+
+  const [cards, setCards] = useState([
+    {id:1, title: 'place1', descr: 'this is place1'},
+    {id:2, title: 'place2', descr: 'this is place2'},
+    {id:3, title: 'place3', descr: 'this is place3'},
+    {id:4, title: 'place4', descr: 'this is place4'}
+  ]) 
+
   return (
     <div className='mainPage_wrapper'>
 
@@ -28,56 +48,14 @@ export default function MainPage() {
         </form>
       </section>
 
-
       <section className="recomendation">
         <h2 className="recomendation_header">
           Рекомендации
         </h2>
-        <div className="recomendaion_cardsWrap">
-          {/* card1 */}
-          <div className="card">
-            <img src={image} alt="картинка карточки" />
-            <div className="descr">
-              <p className='card_descr'>Направление <span className='card_price'>цена: 5000 р.</span></p>
-              <hr />
-              <p className='card_rating'>рейтинг: <span><img src={star} alt="" /></span><span><img src={star} alt="" /></span><span><img src={star} alt="" /></span></p>
-
-            </div>
-          </div>
-          {/* card 1 end */}
-          {/* card2 */}
-          <div className="card">
-            <img src={image} alt="картинка карточки" />
-            <div className="descr">
-              <p className='card_descr'>Направление <span className='card_price'>цена: 5000 р.</span></p>
-              <hr />
-              <p className='card_rating'>рейтинг: <span><img src={star} alt="" /></span><span><img src={star} alt="" /></span><span><img src={star} alt="" /></span></p>
-
-            </div>
-          </div>
-          {/* card 2 end */}
-          {/* card3 */}
-          <div className="card">
-            <img src={image} alt="картинка карточки" />
-            <div className="descr">
-              <p className='card_descr'>Направление <span className='card_price'>цена: 5000 р.</span></p>
-              <hr />
-              <p className='card_rating'>рейтинг: <span><img src={star} alt="" /></span><span><img src={star} alt="" /></span><span><img src={star} alt="" /></span></p>
-
-            </div>
-          </div>
-          {/* card 3 end */}
-          {/* card4 */}
-          <div className="card">
-            <img src={image} alt="картинка карточки" />
-            <div className="descr">
-              <p className='card_descr'>Направление <span className='card_price'>цена: 5000 р.</span></p>
-              <hr />
-              <p className='card_rating'>рейтинг: <span><img src={star} alt="" /></span><span><img src={star} alt="" /></span><span><img src={star} alt="" /></span></p>
-
-            </div>
-          </div>
-          {/* card 4 end */}
+        <div className="recomendaion_cardsWrap">         
+          {cards.map(card =>              
+              <Card card = {card} key={card.id}/>
+            )}
         </div>
 
       </section>

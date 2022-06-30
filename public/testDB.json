@@ -1,0 +1,19 @@
+{
+    "recomendations": [
+      {
+        "id": 1,
+        "name": "1st place",
+        "description": "here you can walk",
+        "rating": 4,
+        "image":  "https://images.unsplash.com/photo-1558364774-b6a53ef599f0?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjEyMDd9"
+      },
+      {
+        "id": 2,
+        "name": "2nd place",
+        "description": "here you can walk to",
+        "rating": 5,
+        "image":  "https://images.unsplash.com/photo-1570784753812-4d34c91e063b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+      }
+
+    ]
+  }
