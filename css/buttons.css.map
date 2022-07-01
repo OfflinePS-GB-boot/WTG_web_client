@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,OAAO,CAAC;EACJ,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,iDAAiD;EAC7D,WAAW,EAAE,YAAY;EACzB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,GAAG;EACnB,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,KAAsB;CAChC",
+    "sources": [
+        "../src/components/Styles/buttons.scss"
+    ],
+    "names": [],
+    "file": "buttons.css"
+}

@@ -1,0 +1,13 @@
+.button {
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  line-height: 15px;
+  color: white;
+}
+/*# sourceMappingURL=buttons.css.map */

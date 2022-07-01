@@ -1,0 +1,56 @@
+.mainPage_wrapper {
+  min-width: 1240px;
+}
+
+.hero {
+  background: #020024;
+  background: linear-gradient(309deg, #020024 0%, #6fcf97 37%, #00d4ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+  height: 100px;
+  padding: 80px;
+}
+
+.hero_header {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-style: bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.location_icon {
+  height: 20px;
+}
+
+.hero_location {
+  margin-bottom: 10px;
+}
+
+.hero_input {
+  padding: 20px 50px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.hero_button {
+  position: relative;
+  left: -100px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  height: 50px;
+}
+
+.recomendaion_cardsWrap {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+/*# sourceMappingURL=MainPage.css.map */

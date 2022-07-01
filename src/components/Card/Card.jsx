@@ -17,7 +17,7 @@ export default function Card(props) {
       <p>{props.card.descr}</p>
       <hr />
       <div>
-        <p className='card_rating'>рейтинг: <span><img src={star} alt="" /></span><span><img src={star} alt="" /></span><span><img src={star} alt="" /></span></p>
+        <p className='card_rating'>рейтинг: <span><img src={star} alt="rating star" /></span><span><img src={star} alt="rating star" /></span><span><img src={star} alt="rating star" /></span></p>
       </div>
     </div>  
     
