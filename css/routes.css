@@ -1,0 +1,53 @@
+.routes__wrapper {
+  padding-left: var(--gap-large);
+}
+
+.routes__title {
+  margin-bottom: 10px;
+}
+
+.routes__gallery {
+  padding: var(--gap-medium) 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-large);
+}
+.routes__gallery-item-title {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.routes__gallery-item {
+  width: 500px;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url('../assets/img/routes-section/map.jpg');
+  background-size: cover;
+  overflow: hidden;
+  transition: border var(--transition-short);
+  border: 5px solid transparent;
+  border-radius: var(--border-radius-large);
+}
+
+.routes__gallery-item:hover,
+.routes__gallery-item:active,
+.routes__gallery-item:focus
+{
+  border: var(--border-accent);
+}
+
+.routes__gallery-item:hover .routes__gallery-icon,
+.routes__gallery-item:focus .routes__gallery-icon,
+.routes__gallery-item:active .routes__gallery-icon {
+  width: 70%;
+}
+.routes__gallery-icon {
+  width: 67%;
+  max-width: 70%;
+  transition: width var(--transition-short);
+}

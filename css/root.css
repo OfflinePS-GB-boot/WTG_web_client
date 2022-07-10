@@ -1,0 +1,29 @@
+:root {
+    /* COLORS */
+    --color-accent: #EEC3FD;
+    --color-white: #fff;
+    --color-black: #000;
+
+
+    /* BOX-MODEL */
+    --gap-medium: 50px;
+    --gap-large: 100px;
+    --gap-large-extra: 150px;
+
+
+    /* transition */
+    --transition-short: 250ms;
+
+
+    /* BORDER */
+    --border-accent: 5px solid var(--color-accent);
+
+    
+    /* BORDER */
+    --border-radius-large: 30px;
+
+
+    /* BOX-SHADOW */
+    --box-shadow-accent-small: 3px 3px 5px var(--color-accent);
+    --box-shadow-accent-large: 10px 10px 5px 0px var(--color-accent);
+}

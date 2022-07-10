@@ -1,0 +1,105 @@
+.rest {
+    width: 100%;
+    padding-bottom: 145px;
+    display: flex;
+    justify-content: center;
+}
+
+.rest__container {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.rest__text {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.rest__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rest__form-box {
+    width: 70%;
+    display: flex;
+}
+.rest__form label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.rest__title-box {
+    margin-bottom: 58px;
+    padding-left: var(--gap-medium);
+    align-self: flex-start;
+}
+.section__title-rest {
+    margin-bottom: 24px;
+}
+
+.rest__units-box {
+    margin-bottom: 84px;
+}
+.rest__units {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.rest__form-btn {
+    max-width: 1095px;
+    padding: 40px 240px;
+    border: 3px solid #C8C2C2;
+    border-radius: 100px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    box-shadow: 10px 10px 4px 0px #00000040;
+    align-self: center;
+}
+
+.rest__form-btn:hover,
+.rest__form-btn:focus {
+    box-shadow: var(--box-shadow-accent-large);
+}
+
+.rest__units-btn {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #C8C2C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.rest__form-input {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #A09999;
+    border-radius: 100px;
+    border: 3px solid #C8C2C2;
+    max-width: 362px;
+    margin-bottom: 32px;
+    justify-self: flex-end;
+}
+
+.rest__form-text {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
