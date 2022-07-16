@@ -41,8 +41,18 @@
     gap: 10px;
     margin-bottom: 20px;
 }
-.footer__link-box {
+.footer__link_box {
     margin-bottom: 20px;
+}
+.contacts__link {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: color 0.8s ease-in-out;
+}
+.contacts__link svg {
+    color: #B8FF20;
+    transition: color 0.8s ease-in-out;
 }
 .contacts__link:hover,
 .contacts__link:hover svg {
