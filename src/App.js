@@ -8,6 +8,7 @@ import Header from './components/Header';
 // import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 // import Modal from './components/Modal/Modal';
 import Footer from './components/Footer';
+import Main from './components/Main/Main';
 import './App.scss';
 import { useState } from 'react';
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/aboutUs' element={<AboutPage />} />        
         <Route path='*' element={<NotFoundPage />} />
       </Routes>  */}
+      <Main />
       <Footer />
       
     
