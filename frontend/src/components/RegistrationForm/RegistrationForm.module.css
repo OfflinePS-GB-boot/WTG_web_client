@@ -1,0 +1,27 @@
+.registration {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+.formTitle {
+  
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formBorder {
+    border: 5px solid #B8FF20;
+    padding: 25px;
+}
+.formInput {
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 16px;
+}
+.registrationBtn {
+    background-color: #B8FF20;
+    padding: 25px;
+    font-size: 28px;
+    border-radius: 16px;
+}
