@@ -1,5 +1,5 @@
 import style from './Footer.module.css';
-import footerLogo from './img/billboard.png';
+import FooterLogo from './img/billboard.png';
 
 export const Footer = () => {
   return (
@@ -9,7 +9,7 @@ export const Footer = () => {
               <div className={style.footer__columns}>
                 <div className={style.footer__colum}>
                     <div className={style.logo__item}>
-                        <img className={style.logo__item_img} src={footerLogo} alt="Логотип приложения WTG"/>
+                        <img className={style.logo__item_img} src={FooterLogo} alt="Логотип приложения WTG"/>
                         <p className={style.logo__item_text}>LOGO</p>
                   </div>
                 </div>
@@ -80,9 +80,8 @@ export const Footer = () => {
                   </div>
                       
                   </div>
-              </div>
-              <p className={style.footer__copyright}>© City Events, 2022</p>
-            
+                  <p className={style.footer__copyright}>© City Events, 2022</p>
+              </div> 
   </footer> 
   );
 }

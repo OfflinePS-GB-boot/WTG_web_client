@@ -1,4 +1,6 @@
 .logo__item_img {
-    display: block;
     cursor: pointer;
+}
+.link {
+    display: block;
 }
