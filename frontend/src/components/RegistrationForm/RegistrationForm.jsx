@@ -9,9 +9,9 @@ export const RegistrationForm = () => {
   const [userNameDirty, setUserNameDirty] = useState(false);
   const [emailDirty, setEmailDirty] = useState(false);
   const [passwordDirty, setPasswordDirty] = useState(false);
-  const [userNameError, setUserNameError] = useState('Username не может быть пустым');
-  const [emailError, setEmailError] = useState('Email не может быть пустым');
-  const [passwordError, setPasswordError] = useState('Password не может быть пустым');
+  const [userNameError, setUserNameError] = useState('Username не должен быть пустым');
+  const [emailError, setEmailError] = useState('Email не должен быть пустым');
+  const [passwordError, setPasswordError] = useState('Password не должен быть пустым');
   const [formValid,  setFormValid] = useState(false);
 
   useEffect(() => {

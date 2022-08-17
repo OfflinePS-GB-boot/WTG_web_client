@@ -6,20 +6,20 @@ import slide_4 from './img/slide_4.jpg';
 
 const Location = () => {
   return (
-  <div class={style.locations__gallery}>
-      <div class={style.locations__img_wrapper}>
-          <img class={style.locations__img} src={slide_1} alt="Krasnodar triumphal arch"></img>
-      </div>
-      <div class={style.locations__img_wrapper}>
-          <img class={style.locations__img} src={slide_2} alt="Krasnodar nature landscape"></img>
-      </div>
-      <div class={style.locations__img_wrapper}>
-          <img class={style.locations__img} src={slide_3} alt="mountain river landscape"></img>
-      </div>
-      <div class={style.locations__img_wrapper}>
-          <img class={style.locations__img} src={slide_4} alt="park landscape"></img>
-      </div>
-  </div>
+  <ul className={style.locations__gallery}>
+      <li className={style.locations__img_wrapper}>
+          <img className={style.locations__img} src={slide_1} alt="Krasnodar triumphal arch"></img>
+      </li>
+      <li className={style.locations__img_wrapper}>
+          <img className={style.locations__img} src={slide_2} alt="Krasnodar nature landscape"></img>
+      </li>
+      <li className={style.locations__img_wrapper}>
+          <img className={style.locations__img} src={slide_3} alt="mountain river landscape"></img>
+      </li>
+      <li className={style.locations__img_wrapper}>
+          <img className={style.locations__img} src={slide_4} alt="park landscape"></img>
+      </li>
+  </ul>
   )
 };
 
