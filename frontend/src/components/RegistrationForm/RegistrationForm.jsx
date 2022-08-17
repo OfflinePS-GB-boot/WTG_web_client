@@ -2,7 +2,7 @@ import React from 'react';
 import style from './RegistrationForm.module.css';
 import { useState, useEffect } from 'react';
 
-export const RegistrationForm = ({active, setActive}) => {
+export const RegistrationForm = () => {
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -73,7 +73,7 @@ export const RegistrationForm = ({active, setActive}) => {
   };
 
   return (
-        <div className={style.active} onClick={() => setActive(false)}>
+        <div className={style.modal}>
           <div className={style.formBorder}>
           <form className={style.registration} onClick={event => event.stopPropagation()}>
             <h1 className={style.formTitle}>Регистрация</h1>
