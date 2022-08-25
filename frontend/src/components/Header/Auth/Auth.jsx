@@ -6,12 +6,13 @@ import { useState } from 'react';
 
 export const Auth = () => {
   const [showModalForm,  setShowModalForm] = useState(false);
+
   return (
     <div>
       <button onClick={() => setShowModalForm(!showModalForm)}>
          <AuthIcon/>
       </button>
-      <CSSTransition classNames='alert' in={showModalForm} timeout={400} unmountOnExit>
+      <CSSTransition classNames='alert' in={showModalForm} timeout={800} unmountOnExit>
           <RegistrationForm />
       </CSSTransition>
     </div>
