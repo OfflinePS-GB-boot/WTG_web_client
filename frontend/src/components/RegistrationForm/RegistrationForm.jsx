@@ -23,7 +23,7 @@ export const RegistrationForm = () => {
   }, [userNameError, emailError, passwordError]);
 
   const userNameHandler = (event) => {
-    setUserName(event.target.value)
+    setUserName(event.target.value);
     if (event.target.value.length < 3 || event.target.value.length > 15) {
       setUserNameError('Имя пользователя должно быть больше 3 и меньше 15 символов');
       if (!event.target.value) {
@@ -45,7 +45,7 @@ export const RegistrationForm = () => {
   };
 
   const passwordHandler = (event) => {
-    setPassword(event.target.value)
+    setPassword(event.target.value);
     if (event.target.value.length < 3 || event.target.value.length > 8) {
       setPasswordError('Пароль должен быть длиннее 3 и меньше 8');
       if (!event.target.value) {
