@@ -12,7 +12,8 @@ export const RegistrationForm = () => {
   const [userNameError, setUserNameError] = useState('Username не должен быть пустым');
   const [emailError, setEmailError] = useState('Email не должен быть пустым');
   const [passwordError, setPasswordError] = useState('Password не должен быть пустым');
-  const [formValid,  setFormValid] = useState(false);
+  const [formValid, setFormValid] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState(true);
 
   useEffect(() => {
     if (userNameError || emailError || passwordError) {
@@ -72,10 +73,15 @@ export const RegistrationForm = () => {
     }
   };
 
-  return (
+  const handleCloseModal = () => {
+    setIsOpenModal(!isOpenModal);
+  };
+
+  return isOpenModal && (
         <div className={style.modal}>
           <div className={style.formBorder}>
           <form className={style.registration} onClick={event => event.stopPropagation()}>
+           <button onClick={handleCloseModal} class={style.close} type='button' data-close>&times;</button>
             <h1 className={style.formTitle}>Регистрация</h1>
             {(userNameError && userNameDirty) && <div style={{color:'red'}}>{userNameError}</div>}
             <input
