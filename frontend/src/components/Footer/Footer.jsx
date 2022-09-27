@@ -23,8 +23,8 @@ export const Footer = () => {
               <div className={style.footer__columns}>
                 <div className={style.footer__colum}>
                     <div className={style.logo__item}>
-                        <img className={style.logo__item_img} src={FooterLogo} alt="Логотип приложения WTG"/>
-                        <p className={style.logo__item_text}></p>
+                      <img className={style.logo__item_img} src={FooterLogo} alt="Логотип приложения WTG"/>
+                      <p className={style.logo__item_text}></p>
                   </div>
                 </div>
                   <div className={style.footer__column}>
