@@ -7,7 +7,7 @@ import { Search } from './Search/Search';
 import Container from '../../Container/Container';
 import { assignId } from '../../../utils/generateRandomID';
 import { Text } from '../../../UI/Text';
-import { Location2 } from './Location2/Location2';
+
 
 const LIST = [
   {src: slide_1, alt: 'Krasnodar triumphal arch'},

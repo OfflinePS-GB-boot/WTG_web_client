@@ -2,6 +2,7 @@
     max-width: 100%;
     border-radius: 5px;
     position: relative;
+    margin-top: 100px;
 }
 
 .search {
@@ -35,4 +36,10 @@
     position: absolute;
     left: 49%;
     top: 157px;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: 5px;
+    position: relative;
 }
