@@ -1,7 +1,8 @@
 import Footer from './components/Footer';
 import './index.css';
-import Main from './components/Main/Main';
 import Header from './components/Header';
+import Main from './components/Main/Main';
+
 
 
 function App() {
@@ -16,3 +17,4 @@ function App() {
 };
 
 export default App;
+
