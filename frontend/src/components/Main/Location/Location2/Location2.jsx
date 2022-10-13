@@ -1,51 +1,29 @@
 import style from './Location2.module.css';
-import { ReactComponent as SearchSvg} from '../img/search.svg';
-import banner from '../img/banner.jpg';
+import { ReactComponent as SearchSvg } from '../img/search.svg';
 import { TextLocation } from './TextLocation/TextLocation';
-import ReactDOM from 'react-dom';
-import {ReactComponent as CloseSvg} from './img/close.svg';
-import { useEffect, useCallback } from 'react';
-import { PropTypes } from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
-export const Location2 = ({closeModal}) => {
+export const Location2 = () => {
+  const navigate = useNavigate();
 
-  const escFunction = useCallback(e => {
-    if (e.key === 'Escape') {
-      closeModal();
-    }
-  }, [closeModal]);
-
-  useEffect(() => {
-    document.addEventListener('keydown', escFunction, false);
-    return () => {
-      document.removeEventListener('keydown', escFunction, false);
-    };
-  });
-
-  return closeModal && ReactDOM.createPortal(
+  return (
     <div className={style.overlay}>
-      <div className={style.modal}> 
-      <img className={style.img} src={banner} alt='banner'/>
-      <h3 className={style.title}>лОКация</h3>
-      <div className={style.wrapper}>
-        <input 
-          type="text" 
-          name="name" 
-          className={style.search}
-        >
-        </input>
-        <SearchSvg className={style.svgSearch} width={60} height={70}/>
+      <div className={style.modal}>
+        <div className={style.wrapperH3}>
+          <h3 className={style.title}>лОКация</h3>
+          <div className={style.wrapper}>
+            <input 
+              type='text' 
+              name='name' 
+              className={style.search}
+              placeholder='Отыщи свой уголок...'
+              ></input>
+            <SearchSvg className={style.svgSearch} width={60} height={70} />
+          </div>
+        </div>
+        
+        <TextLocation />
       </div>
-      <TextLocation />
-      <button className={style.close} onClick={closeModal}>
-        <CloseSvg />
-        </button>
-      </div>
-      </div>,
-    document.getElementById('modal-root'),
+    </div>
   );
-};
-
-Location2.propTypes = {
-  closeModal: PropTypes.func,
 };

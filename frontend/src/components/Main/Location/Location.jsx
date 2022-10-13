@@ -7,6 +7,7 @@ import { Search } from './Search/Search';
 import Container from '../../Container/Container';
 import { useState } from 'react';
 import { Location2 } from './Location2/Location2';
+import { Link } from 'react-router-dom';
 
 const Location = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -17,28 +18,49 @@ const Location = () => {
 
   return (
     <>
-      <Container> 
+      <Container>
         <Search />
-          <ul className={style.locations__gallery}>
-            <li className={style.locations__img_wrapper} onClick={handleClick}>
-                <img className={style.locations__img} src={slide_1} alt="Krasnodar triumphal arch"></img>
-            </li>
-            <li className={style.locations__img_wrapper} onClick={handleClick}>
-                <img className={style.locations__img} src={slide_2} alt="Krasnodar nature landscape"></img>
-            </li>
-            <li className={style.locations__img_wrapper} onClick={handleClick}>
-                <img className={style.locations__img} src={slide_3} alt="mountain river landscape"></img>
-            </li>
-            <li className={style.locations__img_wrapper} onClick={handleClick}>
-                <img className={style.locations__img} src={slide_4} alt="park landscape"></img>
-            </li>
+        <ul className={style.locations__gallery}>
+          <li className={style.locations__img_wrapper} onClick={handleClick}>
+            <Link to='/locations/1'>
+              <img
+                className={style.locations__img}
+                src={slide_1}
+                alt='Krasnodar triumphal arch'
+              ></img>
+            </Link>
+          </li>
+          <li className={style.locations__img_wrapper} onClick={handleClick}>
+            <Link to='/locations/2'>
+              <img
+                className={style.locations__img}
+                src={slide_2}
+                alt='Krasnodar nature landscape'
+              ></img>{' '}
+            </Link>
+          </li>
+          <li className={style.locations__img_wrapper} onClick={handleClick}>
+            <Link to='/locations/3'>
+              <img
+                className={style.locations__img}
+                src={slide_3}
+                alt='mountain river landscape'
+              ></img>{' '}
+            </Link>
+          </li>
+          <li className={style.locations__img_wrapper} onClick={handleClick}>
+            <Link to='/locations/4'>
+              <img
+                className={style.locations__img}
+                src={slide_4}
+                alt='park landscape'
+              ></img>{' '}
+            </Link>
+          </li>
         </ul>
-      </Container> 
-      {
-        openModal && <Location2 closeModal={() => setOpenModal(false)}/>
-      }
-  </>
-);
+      </Container>
+    </>
+  );
 };
 
 export default Location;

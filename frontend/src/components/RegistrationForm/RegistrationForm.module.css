@@ -10,6 +10,7 @@
     justify-content: center;
     transition: 0.4s;
     opacity: 1;
+    z-index: 100;
 }
 
 .modal.active {
@@ -20,7 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #B8FF20;
+    background-color: #EEC3FD;
     position: relative;
 }
 
@@ -31,9 +32,9 @@
 
 .formBorder {
     border-radius: 16px;
-    border: 5px solid #B8FF20;
+    border: 5px solid #EEC3FD;
     padding: 2%;
-    background-color: #B8FF20;
+    background-color: #EEC3FD;
 }
 
 .formInput {
@@ -41,7 +42,7 @@
     padding: 15px;
     width: 350px;
     border-radius: 16px;
-    border-color: #B8FF20;
+    border-color: #EEC3FD;
 }
 
 .close {
@@ -63,27 +64,27 @@
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-    background-color: #a3e710;
-    box-shadow: 0 2px #96d40f;
+    background-color: #dd94f8;
+    box-shadow: 0 2px #EEC3FD;
     cursor: pointer;
     width: 350px;
     color: #000;
 }
 
 .registrationBtn:hover {
-    background-color: #76aa07;
+    background-color: #ce7cec;
     color: #fff;
 }
 
 .registrationBtn:active {
-    background-color: #79a120 !important;
+    background-color: #bb3de9 !important;
 }
 
 .registrationBtn:focus-visible {
-    box-shadow: 0 0 0 3px #b8f03e;
+    box-shadow: 0 0 0 3px #d260fc;
 }
 
 .registrationBtn:disabled {
-    background-color: #d3ff75;
+    background-color: #f2e1f8;
     pointer-events: none;
 }
