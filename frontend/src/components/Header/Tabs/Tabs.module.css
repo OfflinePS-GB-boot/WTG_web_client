@@ -45,3 +45,7 @@
 .options__list_item:last-child {
   margin-right: 0;
 }
+
+.active {
+  color: rgb(92, 0, 0);
+}

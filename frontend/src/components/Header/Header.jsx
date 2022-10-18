@@ -8,11 +8,11 @@ export const Header = () => {
   return (
     <header className={style.header} id='header'>
       <Container>
-        <div className={style.container}>
+        <div className={style.wrapper}>
           <Logo />
           <Auth />
-          <Tabs />
         </div>
+        <Tabs />
       </Container>
     </header>
   );

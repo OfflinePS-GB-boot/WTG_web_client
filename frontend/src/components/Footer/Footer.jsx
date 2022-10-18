@@ -9,7 +9,6 @@ import Container from './../Container/Container';
 import { Link } from 'react-router-dom';
 
 const MENU = [
-  { value: 'Главная', link: '' },
   { value: 'События', link: 'events' },
   { value: 'Локации', link: 'locations' },
   { value: 'Маршруты', link: 'routes' },

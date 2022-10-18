@@ -1,0 +1,47 @@
+[
+        {
+    "id": 1,
+        "title": "Скейт парк",
+        "description": "Короткое описание",
+        "fullDescription": "Полное описание",
+        "address": "Школьный м-н, Прикубанский округ, Краснодар",
+        "workTimeStart": "2022-08-16T09:00:00",
+        "workTimeEnd": "2022-08-16T19:00:00",
+        "workBreakStart": null,
+        "workBreakEnd": null,
+        "linkImage": "https://i0.photo.2gis.com/images/geo/0/30258560049059317_9c5d.jpg",
+        "linkSite": "https://www.culture.ru/",
+        "latitude": 45.039703,
+        "longitude": 39.030299
+    },
+    {
+    "id": 2,
+        "title": "Парк Голицкого",
+        "description": "Короткое описание",
+        "fullDescription": "Полное описание",
+        "address": "Учительская ул., Краснодар",
+        "workTimeStart": "2022-08-16T09:00:00",
+        "workTimeEnd": "2022-08-16T19:00:00",
+        "workBreakStart": null,
+        "workBreakEnd": null,
+        "linkImage": "https://i0.photo.2gis.com/images/geo/0/30258560049059317_9c5d.jpg",
+        "linkSite": "https://www.culture.ru/",
+        "latitude": 45.039703,
+        "longitude": 39.030299
+    },
+    {
+    "id": 3,
+        "title": "Библиотека",
+        "description": "Короткое описание",
+        "fullDescription": "Полное описание",
+        "address": "Ул. Просторная, Краснодар",
+        "workTimeStart": "2022-08-16T09:00:00",
+        "workTimeEnd": "2022-08-16T19:00:00",
+        "workBreakStart": null,
+        "workBreakEnd": null,
+        "linkImage": "https://i0.photo.2gis.com/images/geo/0/30258560049059317_9c5d.jpg",
+        "linkSite": "https://www.culture.ru/",
+        "latitude": 45.039703,
+        "longitude": 39.030299
+    }
+]
