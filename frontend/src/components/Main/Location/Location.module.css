@@ -7,14 +7,12 @@
   .locations__gallery {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: var(--gap-medium);
+    margin-bottom: 80px;
   }
 
   .locations__img_wrapper {
     overflow: hidden;
     cursor: pointer;
-    margin-right: 30px;
     margin-top: 50px;
   }
 

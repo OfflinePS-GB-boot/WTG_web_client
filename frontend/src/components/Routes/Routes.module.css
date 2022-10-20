@@ -1,0 +1,46 @@
+  .search {
+      display: flex;
+      gap: var(--gap-medium);
+      padding: var(--gap-medium) 0px;
+  }
+
+  .gallery {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .img_wrapper {
+      overflow: hidden;
+      cursor: pointer;
+      margin-right: 30px;
+      margin-top: 50px;
+  }
+
+  .img {
+      max-width: 350px;
+      border-radius: 5px;
+      transition: transform var(--transition-short);
+      gap: 30px;
+      background-color: #000;
+      opacity: 1;
+  }
+
+h2 {
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 107px;
+}
+
+ .wrapper {
+     display: flex;
+     margin-bottom: 50px;
+     align-items: center;
+ }
+
+ h3 {
+    font-size: 38px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+ }
+ 

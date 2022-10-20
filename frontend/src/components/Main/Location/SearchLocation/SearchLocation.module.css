@@ -1,6 +1,6 @@
 
   .search {
-    width: 674px;
+    width: 617px;
     height: 60px;
     background: #F1F9FB;
     border-color: #f1f9fb0f;
@@ -18,13 +18,13 @@
   }
 
   .text {
-    font-size: 23px;
+    font-size: 21px;
     margin-right: 40px;
   }
 
   .svgSearch {
     position: absolute;
-    left: 460px;
+    left: 425px;
     top: 12px;
     opacity: 0.2;
   }
@@ -33,7 +33,7 @@
    position: absolute;
    width: 26px;
    height: 26px;
-   right: 12%;
+   right: 2%;
    top: 16px;
    opacity: 0.3;
    cursor: pointer;
